@@ -45,14 +45,23 @@
         <button id="quitBtn">Quit</button>
         
         <!-- Adding buttons for phone users -->
-<div id="controls" style="display: flex; flex-wrap: wrap;">
-    <button id="rotateLeftBtn" style="width: 33%;">Rotate Left</button>
-    <button id="rotateRightBtn" style="width: 33%;">Rotate Right</button>
-    <button id="moveLeftBtn" style="width: 33%;">Move Left</button>
-    <button id="moveRightBtn" style="width: 33%;">Move Right</button>
-    <button id="holdBtn" style="width: 33%;">Shift</button>
-    <button id="hardDropBtn" style="width: 33%;">Hard Drop</button>
-    <button id="dropBtn" style="width: 33%;">Drop</button>
+<div id="controls" style="display: flex; flex-direction: column; gap: 5px;">
+    <!-- First row: Rotate Left and Rotate Right -->
+    <div style="display: flex; gap: 5px;">
+        <button id="rotateLeftBtn" style="flex: 1;">Rotate Left</button>
+        <button id="rotateRightBtn" style="flex: 1;">Rotate Right</button>
+    </div>
+    <!-- Second row: Move Left and Move Right -->
+    <div style="display: flex; gap: 5px;">
+        <button id="moveLeftBtn" style="flex: 1;">Move Left</button>
+        <button id="moveRightBtn" style="flex: 1;">Move Right</button>
+    </div>
+    <!-- Third row: Hold, Hard Drop, and Drop -->
+    <div style="display: flex; gap: 5px;">
+        <button id="holdBtn" style="flex: 1;">Hold</button>
+        <button id="hardDropBtn" style="flex: 1;">Hard Drop</button>
+        <button id="dropBtn" style="flex: 1;">Drop</button>
+    </div>
 </div>
 
 
