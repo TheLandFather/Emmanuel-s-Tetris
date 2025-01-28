@@ -45,14 +45,18 @@
         <button id="quitBtn">Quit</button>
         
         <!-- Adding buttons for phone users -->
-        <div id="controls">
-            <button id="rotateLeftBtn">Rotate Left</button>
-            <button id="rotateRightBtn">Rotate Right</button>
-            <button id="moveLeftBtn">Move Left</button>
-            <button id="moveRightBtn">Move Right</button>
-            <button id="dropBtn">Drop</button>
-            <button id="holdBtn">Hold</button>
-        </div>
+<div id="controls" style="display: flex; flex-wrap: wrap;">
+    <button id="rotateLeftBtn" style="width: 33%;">Rotate Left</button>
+    <button id="rotateRightBtn" style="width: 33%;">Rotate Right</button>
+    <button id="moveLeftBtn" style="width: 33%;">Move Left</button>
+    <button id="moveRightBtn" style="width: 33%;">Move Right</button>
+    <button id="holdBtn" style="width: 33%;">Shift</button>
+    <button id="hardDropBtn" style="width: 33%;">Hard Drop</button>
+    <button id="dropBtn" style="width: 33%;">Drop</button>
+</div>
+
+
+
     </div>
     <div id="gameOver" style="display: none;"></div> <!-- Placeholder for Game Over -->
     <script src="script.js"></script>

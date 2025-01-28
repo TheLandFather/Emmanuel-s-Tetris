@@ -319,6 +319,18 @@ document.getElementById('holdBtn').addEventListener('click', () => {
     }
 });
 
+document.getElementById('hardDropBtn').addEventListener('click', () => {
+    while (!collide(arena, player)) {
+        player.pos.y++;
+    }
+    player.pos.y--;
+    merge(arena, player);
+    playerReset();
+    arenaSweep();
+    updateScore();
+});
+
+
 
 
 
