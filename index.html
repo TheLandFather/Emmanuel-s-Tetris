@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emmanuel's Tetris</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="menu">
+        <h1>Emmanuel's Tetris</h1>
+        <button id="startBtn">Start</button>
+        <button id="howToPlayBtn">How To Play</button>
+    </div>
+    <div id="howToPlay" style="display: none;">
+        <h2>How To Play</h2>
+        <ul>
+            <li>Move Right = Right Arrow</li>
+            <li>Move Left = Left Arrow</li>
+            <li>Rotate Right = Up Arrow</li>
+            <li>Rotate Left = Down Arrow</li>
+            <li>Soft Drop = 0 Num Pad</li>
+            <li>Hard Drop = Space</li>
+            <li>Hold = Shift</li>
+        </ul>
+        <button id="backBtn">Back</button>
+    </div>
+    <div id="game" style="display: none;">
+        <div id="countdown">3</div>
+        <canvas id="tetris" width="240" height="400"></canvas>
+        <div id="info">
+            <div>
+                <canvas id="hold" width="80" height="80"></canvas>
+                <p>Hold</p>
+            </div>
+            <div>
+                <canvas id="next" width="80" height="80"></canvas>
+                <p>Next</p>
+            </div>
+            <div id="score">Score: 0</div>
+            <div id="level">Level: 1</div>
+            <div id="lines">Lines: 0</div>
+        </div>
+        <button id="pauseBtn">Pause</button>
+        <button id="quitBtn">Quit</button>
+        
+        <!-- Adding buttons for phone users -->
+        <div id="controls">
+            <button id="rotateLeftBtn">Rotate Left</button>
+            <button id="rotateRightBtn">Rotate Right</button>
+            <button id="moveLeftBtn">Move Left</button>
+            <button id="moveRightBtn">Move Right</button>
+            <button id="dropBtn">Drop</button>
+            <button id="holdBtn">Hold</button>
+        </div>
+    </div>
+    <div id="gameOver" style="display: none;"></div> <!-- Placeholder for Game Over -->
+    <script src="script.js"></script>
+</body>
+</html>

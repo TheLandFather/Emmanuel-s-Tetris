@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+#menu, #howToPlay, #game {
+    text-align: center;
+}
+#tetris {
+    border: 2px solid white;
+    background-color: black;
+}
+#info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+#info > div {
+    margin: 10px;
+}
+#next, #hold {
+    border: 1px solid white;
+    margin-bottom: 10px;
+}
+#countdown {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+    color: white;
+    display: none;
+}
+#gameOver {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+    color: white;
+    text-align: center;
+    display: none;
+}
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0056b3;
+}
